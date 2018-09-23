@@ -39,7 +39,7 @@ except:
 	atributos = ''
 	for i in range(numero_atributos_preditores):
 		atributos += str(i)+','
-	atributos += 'Aparelho\n'
+	atributos += 'Device\n'
 	arq.writelines(atributos)
 	arq.close()
 	#Settando texto inicial do arquivo
