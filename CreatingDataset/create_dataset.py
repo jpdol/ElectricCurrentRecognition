@@ -5,11 +5,14 @@ porta = "/dev/cu.wchusbserialfa130"
 velocidade = 9600
 conexao = serial.Serial(porta, velocidade)
 
+#Nome do arquivo
+nome_arq = input('Informe o nome do arquivo onde os exemplos devem ser armazeados: ')
+
 #Número de dados de corrente coletadas no domínio do tempo
 numero_atributos_preditores = 300
 
 #Número de exemplos a serem construidos
-numero_exemplos = 200
+numero_exemplos = int(input('Número de exemplos a serem amostrados: '))
 
 #Lista para armazenar os dados da corrente
 exemplo = []
@@ -30,12 +33,12 @@ for i in range(numero_exemplos):
 
 try:
 	#Lendo arquivo, se existir
-	arq = open('ElectricCurrentDataset.txt', 'r')
+	arq = open(nome_arq, 'r')
 	texto = arq.read()
 	arq.close()
 except:
 	#Criando arquivo
-	arq = open('ElectricCurrentDataset.txt', 'w')
+	arq = open(nome_arq, 'w')
 	atributos = ''
 	for i in range(numero_atributos_preditores):
 		atributos += str(i)+','
@@ -46,7 +49,7 @@ except:
 	texto = atributos
 
 #Abrindo arquivo no modo de escrita
-arq = open('ElectricCurrentDataset.txt', 'w')
+arq = open(nome_arq, 'w')
 
 #Acrescentando exemplos ao texto do arquivo
 for i in exemplos:
