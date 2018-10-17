@@ -1,18 +1,17 @@
 import serial
-import pandas as pd
 
-porta = "/dev/cu.wchusbserialfa130"
+porta = "/dev/cu.wchusbserialfd120"
 velocidade = 9600
 conexao = serial.Serial(porta, velocidade)
 
 #Nome do arquivo
-nome_arq = input('Informe o nome do arquivo onde os exemplos devem ser armazeados: ')
+nome_arq = 'ElectricCurrentDataset.txt'
 
 #Número de dados de corrente coletadas no domínio do tempo
 numero_atributos_preditores = 300
 
 #Número de exemplos a serem construidos
-numero_exemplos = int(input('Número de exemplos a serem amostrados: '))
+numero_exemplos = 200
 
 #Lista para armazenar os dados da corrente
 exemplo = []
@@ -21,7 +20,7 @@ exemplo = []
 exemplos = []
 
 # #Instância do atributo-alvo para os exemplos a serem criados
-classe = str(input("Informe a classe dos exemplos: "))
+classe = 'Notebook'
 
 #Criando os exemplos
 for i in range(numero_exemplos):

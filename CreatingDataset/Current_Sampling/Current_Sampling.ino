@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
   while (i<TAM){
-    x = (((analogRead(A0) - 512)*volts_por_unidade)/sensibilidade);
+    x = (((analogRead(A0)-512)*volts_por_unidade)/sensibilidade);
     entrada[i]=x;
     i++;
   }
@@ -25,5 +25,4 @@ void loop() {
     }
     i=0;
   }
-
 }
