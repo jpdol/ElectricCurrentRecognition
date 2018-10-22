@@ -11,7 +11,7 @@ nome_arq = 'ElectricCurrentDataset.txt'
 numero_atributos_preditores = 300
 
 #Número de exemplos a serem construidos
-numero_exemplos = 200
+numero_exemplos = 50
 
 #Lista para armazenar os dados da corrente
 exemplo = []
@@ -20,7 +20,7 @@ exemplo = []
 exemplos = []
 
 # #Instância do atributo-alvo para os exemplos a serem criados
-classe = 'Notebook'
+classe = 'Liquidificador'
 
 #Criando os exemplos
 for i in range(numero_exemplos):

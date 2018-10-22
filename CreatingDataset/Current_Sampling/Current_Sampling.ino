@@ -1,11 +1,11 @@
 #define TAM 300
-#define ZeroCurrent 0.5
+#define ZeroCurrent 0.4
 float entrada[TAM];
 int i = 0;
 
 float volts_por_unidade = 0.004887586; // 5/1023
-float sensibilidade = 0.138; // 5A
-//float sensibilidade = 0.062; // 30A
+//float sensibilidade = 0.138; // 5A
+float sensibilidade = 0.062; // 30A
 
 float x;
 float aux;
