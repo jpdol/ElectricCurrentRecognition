@@ -11,7 +11,7 @@ nome_arq = 'ElectricCurrentDataset.txt'
 numero_atributos_preditores = 300
 
 #Número de exemplos a serem construidos
-numero_exemplos = 50
+numero_exemplos = 63
 
 #Lista para armazenar os dados da corrente
 exemplo = []
