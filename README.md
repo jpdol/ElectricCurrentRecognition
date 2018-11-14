@@ -4,7 +4,7 @@
 
 - ### Description:
 
-  Project, implement e evaluate a new model of energy monitoring in local networks based on 
+  Project, implement and evaluate a new model of energy monitoring in local networks based on 
   electric current patterns detection, using embedded systems to capture current signals from the electrical network and
   machine learning to detect current patterns in electric circuits with objective to generate information from 
   the collected and analysed data to optimize local energy consumption.
